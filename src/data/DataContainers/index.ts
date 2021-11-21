@@ -8,7 +8,7 @@ export const Containers = [
     dateLeave: 'November 5, 2021',
     dateArrive: 'December 20, 2021',
     caution: 'Fragile',
-    transport: 'Ship',
+    transport: 'Trailer',
     tradeMark: 'Modat Apps',
     size: 'Small',
     weight: '600kg',

@@ -1,11 +1,29 @@
 /* eslint-disable prettier/prettier */
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Text, View, StyleSheet, ImageBackground, ScrollView } from 'react-native';
 import DetailComponent from '../../components/DetailComponent';
 import { Containers } from '../../data/DataContainers';
+<<<<<<< HEAD
 import { colors } from '../../themes/baseTheme';
+=======
+import { useState } from 'react';
+>>>>>>> main
 const image = require('../../assets/images/detailImage.png');
 const Component = () => {
+    const [iconName, setIconName] = useState('');
+    useEffect(() => {
+        switch (Containers[0].transport){
+            case 'Train':
+                setIconName('train');
+                break;
+                case 'Ferry':
+                    setIconName('ferry');
+                break;
+                default:
+                    setIconName('truck');
+                    break;
+        }
+    }, []);
     return (
         <View style={styles.Container}>
             <View style={styles.ContainerImage}>
@@ -25,12 +43,12 @@ const Component = () => {
             </View>
                 <View style={styles.ContainerDetails}>
                     <ScrollView>
-                        <DetailComponent dataType="Category" description={Containers[0].category} />
-                        <DetailComponent dataType="Caution" description={Containers[0].caution} />
-                        <DetailComponent dataType="Trademark" description={Containers[0].tradeMark} />
-                        <DetailComponent dataType="Transport" description={Containers[0].transport} />
-                        <DetailComponent dataType="Size" description={Containers[0].size} />
-                        <DetailComponent dataType="Weight" description={Containers[0].weight} />
+                        <DetailComponent dataType="Category" description={Containers[0].category} iconName="shape" />
+                        <DetailComponent dataType="Caution" description={Containers[0].caution} iconName="alert" />
+                        <DetailComponent dataType="Trademark" description={Containers[0].tradeMark} iconName="office-building" />
+                        <DetailComponent dataType="Transport" description={Containers[0].transport} iconName={iconName}/>
+                        <DetailComponent dataType="Size" description={Containers[0].size} iconName="arrow-split-horizontal" />
+                        <DetailComponent dataType="Weight" description={Containers[0].weight} iconName="weight-kilogram" />
                     </ScrollView>
                 </View>
         </View>

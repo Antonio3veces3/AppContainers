@@ -1,17 +1,18 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
-
+import {Icon} from 'react-native-elements';
 interface Props{
     dataType: string,
     description: string,
+    iconName: string,
 }
 
 const Component = (props: Props) => {
-    const {dataType, description} = props;
+    const {dataType, description, iconName} = props;
     return (
         <View style={styles.DetailCard}>
-        <Text>Icon</Text>
+        <Icon  type="material-community"  name={iconName} color="gray" size={15}/>
         <View style= {styles.ViewInfo}>
         <Text style={styles.NameDetail}>{dataType}</Text>
         <Text style= {styles.Description}>{description}</Text>
