@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React, { useEffect} from 'react';
-import { Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { Alert, Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import {useForm} from '../../hooks/useForms';
 import {LoginInterface} from '../../interfaces/interfaces';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
@@ -19,9 +19,17 @@ const Component = (props: Props) => {
     console.log(`Passwrod -> ${password}`);
   },[email, password]);
 
+  let validation = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   const doLogin = ()=>{
-    if (!(email === 'a' && password === 'a')) {return;}
-    navigation.navigate('Home');
+    if (email === '' || password === '') {
+      Alert.alert('ERROR', 'Fill all data');
+    } else {
+      if (validation.test(email) === false){
+        Alert.alert('ERROR', 'Type a valid email');
+      } else {
+        navigation.navigate('Home');
+      }
+    }
   };
 
  return (
@@ -29,9 +37,9 @@ const Component = (props: Props) => {
      <Image style={(styles.Image)} source={require('../../assets/images/login.jpeg')} />
      <View style={(styles.InputsContainer)}>
        <TextInput style={(styles.InputEmail)}
-         placeholder="user@example.com" onChangeText= {value => onChange('email',value)} keyboardType = "email-address" maxLength={1}/>
+         placeholder="user@example.com" onChangeText= {value => onChange('email',value)} keyboardType = "email-address" numberOfLines={1}/>
        <TextInput style={(styles.InputPassword)}
-         placeholder="Password" secureTextEntry={true} onChangeText= {value => onChange('password',value)}
+         placeholder="Password" secureTextEntry={true} onChangeText= {value => onChange('password',value)} numberOfLines={1}
           />
        <View>
          <TouchableOpacity><Text style={(styles.Text)}>Forgot password?</Text>
