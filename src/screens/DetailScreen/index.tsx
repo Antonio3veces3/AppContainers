@@ -3,6 +3,7 @@ import React from 'react';
 import { Text, View, StyleSheet, ImageBackground, ScrollView } from 'react-native';
 import DetailComponent from '../../components/DetailComponent';
 import { Containers } from '../../data/DataContainers';
+import { colors } from '../../themes/baseTheme';
 const image = require('../../assets/images/detailImage.png');
 const Component = () => {
     return (
@@ -38,7 +39,7 @@ const Component = () => {
 
 const styles = StyleSheet.create({
     Container:{
-        backgroundColor: '#E0E0E0',
+        backgroundColor: colors.graye0e0,
         flex: 1,
     },
     ContainerImage: {
