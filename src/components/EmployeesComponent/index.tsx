@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {Image, StyleSheet, Text, View } from 'react-native';
+import { Icon } from 'react-native-elements';
 import {colors} from '../../themes/baseTheme';
 
 interface Props {
@@ -12,14 +13,43 @@ interface Props {
 
 const Component = (props: Props) => {
     const {photo, name, ocuppation, tel} = props;
+    const [iconName, setIconName] = useState('');
+
+    useEffect(() => {
+        switch (ocuppation){
+            case 'Inspector':
+                setIconName('account-search');
+                break;
+
+            case 'Representante':
+                setIconName('account-tie');
+                break;
+
+            case 'Primer Oficial':
+                setIconName('account-star');
+                break;
+
+            case 'Agente Maritimo':
+                setIconName('account-hard-hat');
+                break;
+        }
+    }, []);
 
     return (
         <View style={styles.Container}>
             <View style={styles.ContainerCard}>
                 <View>
                     <Text style={styles.TextName}>{name}</Text>
-                    <Text style={styles.TextOccupation}>{ocuppation}</Text>
-                    <Text style={styles.TextTel}>{tel}</Text>
+                    <View style={styles.ContainerIcon}>
+                        <Icon
+                            style={styles.Icon}
+                            name={iconName}
+                            type={'material-community'}
+                            color="black"
+                            size={35} />
+                    </View>
+                    <Text style={styles.TextOccupation}>Cargo: {ocuppation}</Text>
+                    <Text style={styles.TextTel}>Teléfono: {tel}</Text>
                 </View>
                 <View style={styles.ContainerImage}>
                     <Image style={styles.Image} source={{uri: photo}} />
@@ -35,30 +65,33 @@ const styles = StyleSheet.create({
     },
     ContainerCard: {
         backgroundColor: 'white',
-        margin: 18,
+        marginVertical: 15,
+        marginHorizontal: 15,
         borderRadius: 8,
         paddingHorizontal: 8,
         paddingVertical: 8,
         flexDirection: 'column',
     },
     TextName: {
-        fontSize: 28,
+        backgroundColor: colors.bluec4e4,
+        fontSize: 24,
         fontWeight: 'bold',
         color: colors.blue1c36,
-        borderBottomColor: colors.blue1c36,
-        borderBottomWidth: 1,
+        borderColor: colors.blue026e,
+        borderWidth: 1,
+        borderRadius: 5,
         width: '100%',
         padding: 10,
     },
     TextOccupation: {
-        fontSize: 24,
+        fontSize: 18,
         fontWeight: 'bold',
         padding: 10,
         color: colors.blue1640,
-        marginTop: 10,
+        marginTop: 5,
     },
     TextTel: {
-        fontSize: 19,
+        fontSize: 15,
         fontStyle: 'italic',
         padding: 10,
         color: colors.blue026e,
@@ -69,11 +102,24 @@ const styles = StyleSheet.create({
         width: 110,
         height: 110,
         alignSelf: 'flex-end',
-        marginTop: -98,
+        marginTop: '-32%',
+        marginRight: 10,
+        marginBottom: 10,
     },
     Image: {
         width: 110,
         height: 110,
+    },
+    Icon: {
+        width: 40,
+        height: 40,
+    },
+    ContainerIcon: {
+        width: 40,
+        height: 40,
+        alignSelf: 'flex-start',
+        marginLeft: 10,
+        marginTop: 10,
     },
 });
 
