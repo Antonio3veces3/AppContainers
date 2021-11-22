@@ -6,6 +6,7 @@ import Employees from '../EmployeesScreen';
 import Settings from '../SettingsScreen';
 import ContainersScreen from '../ContainersScreen';
 const Tab = createBottomTabNavigator();
+
 const Component = () => {
     return (
       <Tab.Navigator
