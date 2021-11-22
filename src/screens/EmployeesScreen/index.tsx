@@ -6,7 +6,7 @@ import { ScrollView } from 'react-native';
 
 const Component = () => {
 
-    const GetEmployees = Employees?.map((Employee, index) => {
+    const getEmployees = Employees?.map((Employee, index) => {
         return (
             <EmployeesComponent
                 key={`Employees-${index}`}
@@ -20,7 +20,7 @@ const Component = () => {
 
     return (
         <ScrollView>
-            {GetEmployees}
+            {getEmployees}
         </ScrollView>
     );
 };
