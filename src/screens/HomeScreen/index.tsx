@@ -5,7 +5,6 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Employees from '../EmployeesScreen';
 import Settings from '../SettingsScreen';
 import DetailScreen from '../DetailScreen';
-import { View, StyleSheet, ScrollView } from 'react-native';
 import {Icon} from 'react-native-elements';
 const Tab = createBottomTabNavigator();
 
