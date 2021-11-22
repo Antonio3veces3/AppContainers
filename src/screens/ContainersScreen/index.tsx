@@ -1,10 +1,10 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import { Text, View } from 'react-native';
+import ContainerComponent from '../../components/ContainerComponent';
 
 const Component = () => {
     return (
-        <View><Text>Container Screen</Text></View>
+        <ContainerComponent/>
     );
 };
 export default Component;
