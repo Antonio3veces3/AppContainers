@@ -81,6 +81,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderRadius: 5,
         width: '100%',
+        letterSpacing: 4,
         padding: 10,
     },
     TextOccupation: {
