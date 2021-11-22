@@ -3,7 +3,9 @@ import React, { useEffect } from 'react';
 import { Text, View, StyleSheet, ImageBackground, ScrollView } from 'react-native';
 import DetailComponent from '../../components/DetailComponent';
 import { Containers } from '../../data/DataContainers';
+import { colors } from '../../themes/baseTheme';
 import { useState } from 'react';
+
 const image = require('../../assets/images/detailImage.png');
 const Component = () => {
     const [iconName, setIconName] = useState('');
@@ -53,7 +55,7 @@ const Component = () => {
 
 const styles = StyleSheet.create({
     Container:{
-        backgroundColor: '#E0E0E0',
+        backgroundColor: colors.graye0e0,
         flex: 1,
     },
     ContainerImage: {
@@ -68,7 +70,7 @@ const styles = StyleSheet.create({
     Id:{
         textAlign: 'center',
         fontSize: 25,
-        color: 'white',
+        color: colors.white,
         fontWeight: 'bold',
         marginTop: 15,
     },
@@ -82,12 +84,12 @@ const styles = StyleSheet.create({
     },
     FromTo:{
         fontSize: 14,
-        color: 'white',
+        color: colors.white,
         fontStyle: 'italic',
     },
     Country:{
         fontSize: 18,
-        color: 'white',
+        color: colors.white,
         fontWeight: 'bold',
     },
     ContainerDetails: {
@@ -98,7 +100,7 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         marginTop: 20,
         borderRadius: 8,
-        backgroundColor: 'white',
+        backgroundColor: colors.white,
     },
 });
 
