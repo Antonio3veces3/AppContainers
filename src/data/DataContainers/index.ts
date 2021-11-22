@@ -86,7 +86,7 @@ export const Containers = [
     dateLeave: 'May 15, 2021',
     dateArrive: 'August 20, 2021',
     caution: 'Avoid sudden movement',
-    transport: 'ship',
+    transport: 'Ship',
     tradeMark: 'Zhola',
     size: 'Medium',
     weight: '800kg',
