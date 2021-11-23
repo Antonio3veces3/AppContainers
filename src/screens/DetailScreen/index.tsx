@@ -6,15 +6,16 @@ import { Containers } from '../../data/DataContainers';
 import { colors } from '../../themes/baseTheme';
 import { useState } from 'react';
 
+const index = 1;
 const image = require('../../assets/images/detailImage.png');
 const Component = () => {
     const [iconName, setIconName] = useState('');
     useEffect(() => {
-        switch (Containers[0].transport){
+        switch (Containers[index].transport){
             case 'Train':
                 setIconName('train');
                 break;
-                case 'Ferry':
+                case 'Ship':
                     setIconName('ferry');
                 break;
                 default:
@@ -26,27 +27,30 @@ const Component = () => {
         <View style={styles.Container}>
             <View style={styles.ContainerImage}>
                 <ImageBackground source={image} style={styles.Image}>
-                    <Text style={styles.Id}>ID: {Containers[0].id}</Text>
+                    <Text style={styles.Id}>ID: {Containers[index].id}</Text>
                     <View style={styles.ViewFrom}>
                         <Text style={styles.FromTo}>From</Text>
-                        <Text style={styles.Country}>{Containers[0].origin}</Text>
-                        <Text style={styles.FromTo}>At {Containers[0].dateLeave}</Text>
+                        <Text style={styles.Country}>{Containers[index].origin}</Text>
+                        <Text style={styles.FromTo}>At {Containers[index].dateLeave}</Text>
                     </View>
                     <View style={styles.ViewTo}>
                         <Text  style={styles.FromTo}>To</Text>
-                        <Text style={styles.Country}>{Containers[0].destination}</Text>
-                        <Text style={styles.FromTo}>At {Containers[0].dateArrive}</Text>
+                        <Text style={styles.Country}>{Containers[index].destination}</Text>
+                        <Text style={styles.FromTo}>At {Containers[index].dateArrive}</Text>
                     </View>
                 </ImageBackground>
             </View>
                 <View style={styles.ContainerDetails}>
                     <ScrollView>
-                        <DetailComponent dataType="Category" description={Containers[0].category} iconName="shape" />
-                        <DetailComponent dataType="Caution" description={Containers[0].caution} iconName="alert" />
-                        <DetailComponent dataType="Trademark" description={Containers[0].tradeMark} iconName="office-building" />
-                        <DetailComponent dataType="Transport" description={Containers[0].transport} iconName={iconName}/>
-                        <DetailComponent dataType="Size" description={Containers[0].size} iconName="arrow-split-horizontal" />
-                        <DetailComponent dataType="Weight" description={Containers[0].weight} iconName="weight-kilogram" />
+                        <DetailComponent dataType="Category" description={Containers[index].category} iconName="shape" />
+                        <DetailComponent dataType="Temperature" description={Containers[index].temperature} iconName="thermometer" />
+                        <DetailComponent dataType="Humidity" description={Containers[index].humidity} iconName="water" />
+                        <DetailComponent dataType="Caution" description={Containers[index].caution} iconName="alert" />
+                        <DetailComponent dataType="Trademark" description={Containers[index].tradeMark} iconName="office-building" />
+                        <DetailComponent dataType="Transport" description={Containers[index].transport} iconName={iconName}/>
+                        <DetailComponent dataType="Size" description={Containers[index].size} iconName="arrow-split-horizontal" />
+                        <DetailComponent dataType="Weight" description={Containers[index].weight} iconName="weight-kilogram" />
+
                     </ScrollView>
                 </View>
         </View>
