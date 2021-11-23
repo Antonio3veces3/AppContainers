@@ -49,16 +49,16 @@ export const Employees = [
         tel: '312-108-4635',
     },
     {
-        photo: 'https://instagram.fclq1-1.fna.fbcdn.net/v/t51.2885-15/e35/64697065_1023501634515891_4155905736651170051_n.jpg?_nc_ht=instagram.fclq1-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=qO-0tLbZ1-sAX-t_JBy&tn=dhjOOdztLloTiMyg&edm=AP_V10EBAAAA&ccb=7-4&oh=21c643031bb975c471c203402cfbc84e&oe=61A2188B&_nc_sid=4f375e',
-        name: 'Omar Velasco',
-        Ocuppation: 'Agente Maritimo',
-        tel: '312-131-5957',
-    },
-    {
         photo: 'https://instagram.fclq1-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/80507567_175996366817775_4805832189459018633_n.jpg?_nc_ht=instagram.fclq1-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=RJIFmW4D4JQAX-VJyKd&edm=AP_V10EBAAAA&ccb=7-4&oh=81eb52030775e5284ce9cb0685583c6d&oe=61A18D89&_nc_sid=4f375e',
         name: 'Dafne Aquino',
         Ocuppation: 'Representante',
         tel: '312-107-1153',
+    },
+    {
+        photo: 'https://instagram.fclq1-1.fna.fbcdn.net/v/t51.2885-15/e35/64697065_1023501634515891_4155905736651170051_n.jpg?_nc_ht=instagram.fclq1-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=qO-0tLbZ1-sAX-t_JBy&tn=dhjOOdztLloTiMyg&edm=AP_V10EBAAAA&ccb=7-4&oh=21c643031bb975c471c203402cfbc84e&oe=61A2188B&_nc_sid=4f375e',
+        name: 'Omar Velasco',
+        Ocuppation: 'Agente Maritimo',
+        tel: '312-131-5957',
     },
 
 ];

@@ -90,6 +90,7 @@ const styles = StyleSheet.create({
         padding: 10,
         color: colors.blue1640,
         marginTop: 5,
+        width: '65%',
     },
     TextTel: {
         fontSize: 15,
