@@ -3,7 +3,7 @@ export const Employees = [
     {
         photo: 'https://img.freepik.com/foto-gratis/cabeza-guapo-hombre-sonriente-feliz-mirando-esperanzado_176420-19029.jpg?size=626&ext=jpg',
         name: 'Alexis Campos',
-        Ocuppation: 'Agente Maritimo',
+        Ocuppation: 'Shipping agent',
         tel: '313-158-4576',
     },
     {
@@ -21,25 +21,25 @@ export const Employees = [
     {
         photo: 'https://www.g20.org/wp-content/uploads/2021/01/people.jpg',
         name: 'Paula Nuñez',
-        Ocuppation: 'Agente Maritimo',
+        Ocuppation: 'Shipping agent',
         tel: '759-146-4769',
     },
     {
         photo: 'https://www.ft.com/__origami/service/image/v2/images/raw/http%3A%2F%2Fcom.ft.imagepublish.upp-prod-eu.s3.amazonaws.com%2F83afb31c-38fc-11e9-9988-28303f70fcff?fit=scale-down&source=next&width=700 ',
         name: 'Francisco Gomez',
-        Ocuppation: 'Representante',
+        Ocuppation: 'Manager',
         tel: '313-496-4578',
     },
     {
         photo: 'https://www.international.gc.ca/world-monde/assets/images/issues_development-enjeux_developpement/gender_equality-egalite_des_genres/jacqueline_oneill.jpg',
         name: 'Fernanda Gonzalez',
-        Ocuppation: 'Agente Maritimo',
+        Ocuppation: 'Shipping agent',
         tel: '354-482-4791',
     },
     {
         photo: 'https://instagram.fclq1-1.fna.fbcdn.net/v/t51.2885-15/e35/109348848_152503469781647_228319265884707979_n.jpg?_nc_ht=instagram.fclq1-1.fna.fbcdn.net&_nc_cat=111&_nc_ohc=JL-ahYy3NXEAX_uvDHB&edm=AABBvjUBAAAA&ccb=7-4&oh=88ce12ecd7df37071694019bca7022d4&oe=61A1980C&_nc_sid=83d603',
         name: 'Mezly Mondragón',
-        Ocuppation: 'Primer Oficial',
+        Ocuppation: 'First oficial',
         tel: '314-337-3250',
     },
     {
@@ -51,13 +51,13 @@ export const Employees = [
     {
         photo: 'https://instagram.fclq1-1.fna.fbcdn.net/v/t51.2885-15/e35/p1080x1080/80507567_175996366817775_4805832189459018633_n.jpg?_nc_ht=instagram.fclq1-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=RJIFmW4D4JQAX-VJyKd&edm=AP_V10EBAAAA&ccb=7-4&oh=81eb52030775e5284ce9cb0685583c6d&oe=61A18D89&_nc_sid=4f375e',
         name: 'Dafne Aquino',
-        Ocuppation: 'Representante',
+        Ocuppation: 'Manager',
         tel: '312-107-1153',
     },
     {
         photo: 'https://instagram.fclq1-1.fna.fbcdn.net/v/t51.2885-15/e35/64697065_1023501634515891_4155905736651170051_n.jpg?_nc_ht=instagram.fclq1-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=qO-0tLbZ1-sAX-t_JBy&tn=dhjOOdztLloTiMyg&edm=AP_V10EBAAAA&ccb=7-4&oh=21c643031bb975c471c203402cfbc84e&oe=61A2188B&_nc_sid=4f375e',
         name: 'Omar Velasco',
-        Ocuppation: 'Agente Maritimo',
+        Ocuppation: 'Shipping agent',
         tel: '312-131-5957',
     },
 

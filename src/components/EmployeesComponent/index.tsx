@@ -21,15 +21,15 @@ const Component = (props: Props) => {
                 setIconName('account-search');
                 break;
 
-            case 'Representante':
+            case 'Manager':
                 setIconName('account-tie');
                 break;
 
-            case 'Primer Oficial':
+            case 'First oficial':
                 setIconName('account-star');
                 break;
 
-            case 'Agente Maritimo':
+            case 'Shipping agent':
                 setIconName('account-hard-hat');
                 break;
         }
@@ -48,8 +48,8 @@ const Component = (props: Props) => {
                             color="black"
                             size={35} />
                     </View>
-                    <Text style={styles.TextOccupation}>Cargo: {ocuppation}</Text>
-                    <Text style={styles.TextTel}>Teléfono: {tel}</Text>
+                    <Text style={styles.TextOccupation}>Position: {ocuppation}</Text>
+                    <Text style={styles.TextTel}>Phone: {tel}</Text>
                 </View>
                 <View style={styles.ContainerImage}>
                     <Image style={styles.Image} source={{uri: photo}} />
