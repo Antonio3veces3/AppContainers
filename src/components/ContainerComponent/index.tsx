@@ -43,13 +43,13 @@ const Component = (props:Props) => {
                                 </Text>
                         </View>
                         <View style={styles.Container}>
-                                <View style={styles.Icon}>
-                                <Icon
-                                    name={iconName}
-                                    type={'material-community'}
-                                    color='white'
-                                    size={35}
-                                />
+                            <View style={styles.Icon}>
+                            <Icon
+                                name={iconName}
+                                type={'material-community'}
+                                color="white"
+                                size={35}
+                            />
                             </View>
                             <View style={styles.Place}>
                                 <Text style={styles.PlaceText}>From</Text>
@@ -79,31 +79,31 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderRadius:20,
         height: 100,
-        backgroundColor: '#416a85',
         margin:5,
     },
     Container:{
         display:'flex',
         flexDirection:'row',
-        justifyContent: 'space-around',
         textAlign: 'center',
         padding:5,
+        justifyContent: 'space-around',
     },
     Place: {
-        display:'flex',
         flexDirection:'column',
-        textAlign: 'center',
-        justifyContent: 'center',
+        marginLeft: 35,
+        width: 110,
     },
     Icon: {
         textAlign: 'center',
         justifyContent: 'center',
+        width: 60,
     },
     ContainerId: {
         justifyContent:'center',
         textAlign:'center',
         color :'white',
         fontSize:18,
+        paddingTop: 5,
     },
     Icons: {
         display:'flex',
@@ -118,11 +118,13 @@ const styles = StyleSheet.create({
     PlaceText: {
         color:'white',
         fontSize:15,
+        fontStyle: 'italic',
     },
     DestinationPlace: {
         color:'white',
-        fontSize:18,
+        fontSize:20,
         fontFamily: 'bold',
+        fontWeight: '500',
     },
     Image: {
         width:'100%',

@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 export const Containers = [
   {
-    id: '01',
+    id: '1',
     origin: 'Colima',
     destination: 'Guadalajara',
     category: 'Electronics',
@@ -16,7 +16,7 @@ export const Containers = [
     weight: '600kg',
   },
   {
-    id: '02',
+    id: '2',
     origin: 'Manzanillo',
     destination: 'Michoacan',
     category: 'Food',
@@ -31,8 +31,8 @@ export const Containers = [
     weight: '1000kg',
   },
   {
-    id: '03',
-    origin: 'Maiami',
+    id: '3',
+    origin: 'Miami',
     destination: 'Manzanillo',
     category: 'Cleanliness',
     dateLeave: 'June 7, 2021',
@@ -46,7 +46,7 @@ export const Containers = [
     weight: '800kg',
   },
   {
-    id: '04',
+    id: '4',
     origin: 'Paris',
     destination: 'Manzanillo',
     category: 'Vehicles',
@@ -61,7 +61,7 @@ export const Containers = [
     weight: '4000kg',
   },
   {
-    id: '05',
+    id: '5',
     origin: 'Amsterdam',
     destination: 'Manzanillo',
     category: 'Hazardous Material',
@@ -76,7 +76,7 @@ export const Containers = [
     weight: '500kg',
   },
   {
-    id: '06',
+    id: '6',
     origin: 'Manzanillo',
     destination: 'Regina',
     category: 'Chemical',
@@ -91,7 +91,7 @@ export const Containers = [
     weight: '500kg',
   },
   {
-    id: '07',
+    id: '7',
     origin: 'Japan',
     destination: 'Manzanillo',
     category: 'Cosmetics',
@@ -106,7 +106,7 @@ export const Containers = [
     weight: '800kg',
   },
   {
-    id: '08',
+    id: '8',
     origin: 'Manzanillo',
     destination: 'Spain',
     category: 'Textiles',
@@ -121,7 +121,7 @@ export const Containers = [
     weight: '800kg',
   },
   {
-    id: '09',
+    id: '9',
     origin: 'Vancouver',
     destination: 'Manzanillo',
     category: 'Electronics',

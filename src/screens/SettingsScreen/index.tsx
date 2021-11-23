@@ -161,7 +161,7 @@ const styles = StyleSheet.create({
  AccountContainer: {
    backgroundColor: '#416a85',
    width: '100%',
-   marginTop: 10,
+   marginTop: 25,
    padding: 10,
    borderRadius: 10,
  },

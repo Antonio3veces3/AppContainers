@@ -5,10 +5,17 @@ import DetailComponent from '../../components/DetailComponent';
 import { Containers } from '../../data/DataContainers';
 import { colors } from '../../themes/baseTheme';
 import { useState } from 'react';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { MainParams } from '../../navigators/MainNavigator';
 
-const index = 1;
+interface Props extends NativeStackScreenProps<MainParams, 'ContainersScreen'>{}
+
 const image = require('../../assets/images/detailImage.png');
-const Component = () => {
+const Component = (props: Props) => {
+    const {
+        route: {params: container},
+    } = props;
+    const index = parseInt(container, 10) - 1;
     const [iconName, setIconName] = useState('');
     useEffect(() => {
         switch (Containers[index].transport){
@@ -87,7 +94,7 @@ const styles = StyleSheet.create({
         marginLeft: 70,
     },
     FromTo:{
-        fontSize: 14,
+        fontSize: 15,
         color: colors.white,
         fontStyle: 'italic',
     },
@@ -99,7 +106,7 @@ const styles = StyleSheet.create({
     ContainerDetails: {
         paddingTop: 10,
         alignItems: 'center',
-        height: '48%',
+        height: '52%',
         width: '95%',
         alignSelf: 'center',
         marginTop: 20,
