@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { ImageBackground, StyleSheet, Text, TouchableHighlight, View } from 'react-native';
 import { Icon } from 'react-native-elements';
 import { Containers } from '../../data/DataContainers';
+import { colors } from '../../themes/baseTheme';
 const image = require('../../assets/images/detailImage.png');
 
 interface Props{
@@ -75,7 +76,7 @@ const styles = StyleSheet.create({
         justifyContent:'center',
         alignItems:'center',
         textAlign:'center',
-        borderColor: 'white',
+        borderColor: colors.white,
         borderWidth: 2,
         borderRadius:20,
         height: 100,
@@ -101,7 +102,7 @@ const styles = StyleSheet.create({
     ContainerId: {
         justifyContent:'center',
         textAlign:'center',
-        color :'white',
+        color : colors.white,
         fontSize:18,
         paddingTop: 5,
     },
@@ -113,15 +114,15 @@ const styles = StyleSheet.create({
     },
     TextIcon: {
         letterSpacing: -2,
-        color:'white',
+        color: colors.white,
     },
     PlaceText: {
-        color:'white',
+        color: colors.white,
         fontSize:15,
         fontStyle: 'italic',
     },
     DestinationPlace: {
-        color:'white',
+        color: colors.white,
         fontSize:20,
         fontFamily: 'bold',
         fontWeight: '500',

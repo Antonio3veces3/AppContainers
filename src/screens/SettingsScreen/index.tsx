@@ -1,9 +1,10 @@
 /* eslint-disable prettier/prettier */
-import { anyTypeAnnotation } from '@babel/types';
 import React, { useState } from 'react';
 import { ImageBackground, StyleSheet, Switch, Text, TouchableOpacity, View } from 'react-native';
 import { Icon } from 'react-native-elements';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { colors } from '../../themes/baseTheme';
+
 
 interface Props extends NativeStackScreenProps <any, any>{}
 
@@ -134,7 +135,7 @@ const styles = StyleSheet.create({
    alignItems: 'center',
    display: 'flex',
    height: '100%',
-   backgroundColor: '#c4e4f3',
+   backgroundColor: colors.bluec4e4,
  },
  Image: {
    width: '100%',
@@ -143,7 +144,7 @@ const styles = StyleSheet.create({
  },
  TextTitle: {
    fontSize: 15,
-   color: '#c4e4f3',
+   color: colors.bluec4e4,
    fontWeight: '500',
  },
  SettingsView:{
@@ -155,11 +156,11 @@ const styles = StyleSheet.create({
  TextSubtitle: {
    letterSpacing: 3,
    fontSize: 15,
-   color: 'white',
+   color: colors.white,
    marginLeft: 30,
  },
  AccountContainer: {
-   backgroundColor: '#416a85',
+   backgroundColor: colors.blue416a,
    width: '100%',
    marginTop: 25,
    padding: 10,
@@ -176,7 +177,7 @@ const styles = StyleSheet.create({
    flexDirection: 'row',
  },
  ModeContainer: {
-   backgroundColor: '#416a85',
+   backgroundColor: colors.blue416a,
    width: '100%',
    marginTop: 15,
    height: 55,
@@ -191,14 +192,14 @@ const styles = StyleSheet.create({
    marginLeft: 85,
  },
  SupportContainer: {
-   backgroundColor: '#416a85',
+   backgroundColor: colors.blue416a,
    width: '100%',
    marginTop: 15,
    padding: 10,
    borderRadius: 10,
  },
  ButtonContainer: {
-   backgroundColor: '#29516b',
+   backgroundColor: colors.blue2951,
    height: 50,
    width: 300,
    borderRadius: 20,
@@ -210,7 +211,7 @@ const styles = StyleSheet.create({
  ButtonText: {
    fontSize: 20,
    fontWeight: '600',
-   color: 'white',
+   color: colors.white,
  },
 });
 
