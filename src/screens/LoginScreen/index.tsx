@@ -4,6 +4,7 @@ import { Alert, Image, StyleSheet, Text, TextInput, TouchableOpacity, View } fro
 import {useForm} from '../../hooks/useForms';
 import {LoginInterface} from '../../interfaces/interfaces';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { colors } from '../../themes/baseTheme';
 
 interface Props extends NativeStackScreenProps <any, any>{}
 
@@ -75,7 +76,7 @@ const styles = StyleSheet.create({
    display: 'flex',
    justifyContent: 'center',
    width: '100%',
-   backgroundColor: 'white',
+   backgroundColor: colors.white,
    marginTop: -9,
  },
  InputEmail: {
@@ -85,13 +86,13 @@ const styles = StyleSheet.create({
    letterSpacing: 3,
    fontStyle: 'italic',
    height: 60,
-   color: '#050000',
+   color: colors.black050,
    margin: 12,
    padding: 20,
    width: 280,
    borderWidth: 1,
    borderBottomColor: 'gray',
-   borderColor: 'white',
+   borderColor: colors.white,
  },
  InputPassword: {
    marginTop: 0,
@@ -100,20 +101,20 @@ const styles = StyleSheet.create({
    letterSpacing: 3,
    fontStyle: 'italic',
    height: 60,
-   color: '#050000',
+   color: colors.black050,
    margin: 12,
    padding: 20,
    width: 280,
    borderWidth: 1,
    borderBottomColor: 'gray',
-   borderColor: 'white',
+   borderColor: colors.white,
  },
  Text: {
    fontSize: 18,
    fontWeight: '700',
    fontStyle: 'italic',
    height: 40,
-   color: '#026eb7',
+   color: colors.blue026e,
    left: 140,
  },
  ButtonContainer: {
@@ -123,7 +124,7 @@ const styles = StyleSheet.create({
    padding: 10,
  },
  ButtonLogin: {
-   backgroundColor: '#2474d6',
+   backgroundColor: colors.blue2474,
    height: 50,
    width: 300,
    borderRadius: 20,
@@ -133,7 +134,7 @@ const styles = StyleSheet.create({
  ButtonText: {
    fontSize: 20,
    fontWeight: '600',
-   color: 'white',
+   color: colors.white,
  },
  GAPText: {
    padding: 12,
@@ -141,7 +142,7 @@ const styles = StyleSheet.create({
    color: 'gray',
  },
  ButtonSign:{
-   backgroundColor: 'white',
+   backgroundColor: colors.white,
    height: 50,
    width: 300,
    borderRadius: 20,
@@ -153,7 +154,7 @@ const styles = StyleSheet.create({
  ButtonSignText: {
    fontSize: 20,
    fontWeight: '600',
-   color: '#29516b',
+   color: colors.blue2951,
  },
 });
 export default Component;
