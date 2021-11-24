@@ -66,7 +66,7 @@ const Component = (props: Props) => {
 
 const styles = StyleSheet.create({
     Container:{
-        backgroundColor: colors.graye0e0,
+        backgroundColor: colors.grayE0E0,
         flex: 1,
     },
     ContainerImage: {
